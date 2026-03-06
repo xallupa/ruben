@@ -1,110 +1,102 @@
 <!DOCTYPE html>
- <html>
-    <head>
-             <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Analytics Test</title>
-     <style>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Porto Fan Page | Teste GitHub</title>
+    <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+            color: #003087; /* Azul Porto */
         }
-        .header {
-            background-color: #ffffff;
-            color: #00529F; /* Real Madrid Blue */
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px solid #FEBE10; /* Real Madrid Gold */
-        }
-        .nav {
-            background-color: #00529F;
-            padding: 10px;
-            text-align: center;
-        }
-        .nav a {
+        header {
+            background-color: #003087;
             color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid #FFD700; /* Toque de dourado */
+        }
+        nav {
+            background: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .container {
+            max-width: 800px;
+            margin: 2rem auto;
             padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .card {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 15px;
-            padding: 20px;
-            width: 300px;
         }
-        .card h3 {
-            color: #00529F;
-            border-bottom: 2px solid #FEBE10;
-            padding-bottom: 10px;
+        h2 {
+            border-left: 5px solid #003087;
+            padding-left: 10px;
         }
-        .card ul {
-            list-style-type: none;
-            padding: 0;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
-        .card ul li {
-            padding: 5px 0;
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #003087;
+            color: white;
+        }
+        tr:hover {background-color: #f1f1f1;}
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .stats {
+            font-weight: bold;
+            color: #d32f2f;
         }
     </style>
-    </head>
-  
-    <body>
+</head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDH4V64J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div class="header">
-        <h1>Real Vardrid C.F.</h1>
-        <p>¡Hala Vardrid y nada más!</p>
-    </div>
 
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Squad</a>
-        <a href="#">Trophies</a>
-        <a href="#">History</a>
-    </div>
+<header>
+    <h1>Futebol Clube do Porto</h1>
+    <p>"A vencer desde 1893"</p>
+</header>
+<div class="container">
+    <h2>Sobre o Dragão</h2>
+    <p>O FC Porto é conhecido pela sua raça e mística, o clube conquistou o mundo por diversas vezes.</p>
 
-    <div class="container">
-        <!-- Stats Card -->
-        <div class="card">
-            <h3>Club Info</h3>
-            <p><strong>Founded:</strong> 1902</p>
-            <p><strong>Stadium:</strong> Santiago Bernabéu (we close it sometimes, it gets spooky)</p>
-            <p><strong>Region:</strong> Madrid, Castella</p>
-        </div>
+    <h3>Palmarés Internacional</h3>
+    <table>
+        <tr>
+            <th>Troféu</th>
+            <th>Quantidade</th>
+        </tr>
+        <tr>
+            <td>UEFA Champions League</td>
+            <td class="stats">2</td>
+        </tr>
+        <tr>
+            <td>UEFA Europa League / Taça UEFA</td>
+            <td class="stats">2</td>
+        </tr>
+        <tr>
+            <td>Mundiais de Clubes</td>
+            <td class="stats">2</td>
+        </tr>
+        <tr>
+            <td>Supertaça Europeia</td>
+            <td class="stats">1</td>
+        </tr>
+    </table>
+</div>
 
-        <!-- Trophy Card -->
-        <div class="card">
-            <h3>Major Honours</h3>
-            <ul>
-                <li>Failed Galacticos: 2</li>
-                <li>Peseteros: 1</li>
-                <li>Lost to Benfica: including UCL</li>
-            </ul>
-        </div>
-
-        <!-- Players Card -->
-        <div class="card">
-            <h3>Key Players</h3>
-            <ul>
-                <li>Javier Alberola Rojas</li>
-                <li>Vinícius Jr.</li>
-                <li>Ricardo de Burgos Bengoetxea</li>
-                <li>Ronaldo siuuuu</li>
-            </ul>
-        </div>
-    </div>
-    </body>
+</body>
 </html>
